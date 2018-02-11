@@ -1,0 +1,38 @@
+<!-- THIS HTML FILE IS THE CONTENT OF DIRECTIVE Login -->
+<table class="table table-bordered table-striped table-condensed" style="width:50%" ng-controller="LoginCTRLDirective">
+    <tr>
+        <td>Email:</td>
+        <td>
+            <input type="text" class="form-control"
+                   ng-model="userLoginEmail" />
+        </td>
+    </tr>
+    <tr>
+        <td>Password:</td>
+        <td>
+            <input type="password"
+                   class="form-control"
+                   ng-model="userLoginPassword" />
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input type="button" value="Login" class="form-control btn btn-success"
+                   ng-click="login()" />
+        </td>
+    </tr>
+    <tr>
+        <td>Social Login</td>
+        <td>
+                   <input type="button" value="Gmail"
+                   class="form-control btn btn-success"
+                   ng-click="registerGoogle()" />
+        </td>
+    </tr>
+    
+</table>
